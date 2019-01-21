@@ -6,8 +6,8 @@ mail = require('nodemailer')
 x=mail.createTransport({
   service: 'gmail',
   auth:{
-    user: 'network6g@gmail.com',
-    pass: 'revanth99',
+    user: 'YourmailID@gmail.com',
+    pass: 'maildIDpassword',
     secure:false,
     port:25,
   }
@@ -48,7 +48,7 @@ app.post('/maildata',function(req,res)
 });
 x.sendMail(
   {
-    from:"revanthsadaram99@gmail.com",
+    from:"YourMaild@gmail.com",
     to:response.email,
     subject:'mail sending demo usind nodejs',
     text:"you have successfully applied for Admission in our college."
